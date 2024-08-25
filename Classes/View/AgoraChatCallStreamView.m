@@ -65,7 +65,7 @@
         [self.contentView addSubview:_speakingView];
         
         _avatarImageView = [[UIImageView alloc] init];
-        _avatarImageView.contentMode = UIViewContentModeScaleAspectFit;
+        _avatarImageView.contentMode = UIViewContentModeScaleAspectFill;
         _avatarImageView.layer.masksToBounds = YES;
         [self.contentView addSubview:_avatarImageView];
         [_speakingView mas_makeConstraints:^(MASConstraintMaker *make) {
