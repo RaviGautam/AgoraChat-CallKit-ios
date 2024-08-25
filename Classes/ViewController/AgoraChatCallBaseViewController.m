@@ -86,6 +86,7 @@
     [self.miniButton addTarget:self action:@selector(miniAction) forControlEvents:UIControlEventTouchUpInside];
     [self.contentView addSubview:self.miniButton];
     [self.miniButton setTintColor:UIColor.whiteColor];
+    [self.miniButton setHidden:YES];
     [self.miniButton mas_makeConstraints:^(MASConstraintMaker *make) {
         if (@available(iOS 11,*)) {
             make.top.equalTo(self.contentView.mas_safeAreaLayoutGuideTop);
