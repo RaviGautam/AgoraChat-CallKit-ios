@@ -24,11 +24,11 @@ static AgoraChatCallKitModel *callKitModel;
     if (![self getAgoraChatCallConfig].enableIosCallKit) {
         return;
     }
-    CXProviderConfiguration *config = [[CXProviderConfiguration alloc] initWithLocalizedName:@"AgoraChatCallManager"];
+    CXProviderConfiguration *config = [[CXProviderConfiguration alloc] initWithLocalizedName:@"Besa Health"];
     config.supportsVideo = YES;
     config.maximumCallGroups = 1;
     config.maximumCallsPerCallGroup = 1;
-    config.iconTemplateImageData = UIImagePNGRepresentation([UIImage agoraChatCallKit_imageNamed:@"callkit_icon"]);
+    config.iconTemplateImageData = UIImagePNGRepresentation([UIImage agoraChatCallKit_imageNamed:@"callkiticon"]);
     if (@available(iOS 11.0, *)) {
         config.includesCallsInRecents = NO;
     }
